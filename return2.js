@@ -1,8 +1,8 @@
-function randomNumber(){
+function randomNumber(max){
     let decimal = Math.random();
-    let times10 =  decimal *10;
+    let timesMax =  decimal *max
     let number = Math.round(times10);
     return number;
 }
 
-console.log('I am ' + randomNumber() + ' years old!');
+console.log('I am ' + randomNumber(35) + ' years old!');
